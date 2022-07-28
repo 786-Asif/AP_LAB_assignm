@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        body{
+            background-color: rgb(238, 93, 177);
+        }
+        h1{
+            background-color: yellow;
+            color: red;
+            text-align: center;
+        }
+        h2{
+            color: rgb(3, 100, 3);
+        }
+        h2{
+            background-color: aqua;
+            color: blue;
+            text-align: center;
+        }
+        #container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: rgb(215, 248, 30);
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+p{
+    color: orangered;
+   text-align:right;
+   margin: top 2px;
+   padding: 335px;
+   margin:right 10px;
+}
+    </style>
+    <h1>JavaScript HTML DOM</h1>
+    <h2 id="demo">Mohammad Asif</h2>
+    <h2>Javascript can change the html</h2>
+    <h3 id="demo1">Hello dear</h3>
+    <h3 id="demo2">Anshumat💖💖</h3>
+    <button type="button" onclick="document.getElementById('demo1').style.color='yellow'">touch please</button>
+    <button type="button" onclick="document.getElementById('demo2').innerHTML='💖💖 D***HA'">touch please</button>
+    <br><br>
+    <img id="image" src="https://y26uq11r8xr1zyp0d3inciqv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/214-1.jpg" height="200" width="200">
+<br><br>
+<h3><button onclick="myMove()">Click Me</button></h3>
+    
+<div id ="container">
+        <div id ="animate">💖💖</div>
+        <p>Yadav</p>
+    </div>
+<br>
+ <marquee>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:lavender;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+</marquee>
+<br>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<button id="myBtn">click me </button>
+
+    <script>
+        document.getElementById("image").src="https://img.etimg.com/thumb/msid-70259600,width-650,imgsize-343027,,resizemode-4,quality-100/emojis_gettyimages.jpg";
+    
+    const element=document.getElementById("demo");
+    element.innerHTML="Anshu Ra**i";S
+
+
+    function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+
+function mOver(obj) {
+  obj.style.backgroundColor = "orange";
+  obj.innerHTML = "Thank You 😘🥰"
+}
+
+function mOut(obj) {
+  obj.style.backgroundColor = "cornflowerblue";
+  obj.innerHTML = "Mouse Over Me"
+}
+
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Anshu jawd 😎😎";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello dear 🥰");
+}
+
+    </script>
+
+
+    <style>
+      #myDiv1, #myDiv2 {
+        background-color: rgb(243, 26, 109);
+        padding: 50px;
+      }
+      
+      #myP1, #myP2 {
+        background-color: rgb(250, 250, 85); 
+        font-size: 20px;
+        border: 1px solid;
+        padding: 20px;
+      }
+      </style>
+
+      <h2>JavaScript addEventListener() fncn</h2>
+
+<div id="myDiv1">
+  <h2>Bubbling:</h2>
+  <p id="myP1">Click me!</p>
+</div><br>
+
+<div id="myDiv2">
+  <h2>Capturing:</h2>
+  <p id="myP2">Click me!</p>
+</div>
+
+<script>
+document.getElementById("myP1").addEventListener("click", function() {
+  alert("You clicked the yellow element!");
+}, false);
+
+document.getElementById("myDiv1").addEventListener("click", function() {
+  alert("You clicked the red element!");
+}, false);
+
+document.getElementById("myP2").addEventListener("click", function() {
+  alert("You clicked the yellow element!");
+}, true);
+
+document.getElementById("myDiv2").addEventListener("click", function() {
+  alert("You clicked the red element!");
+}, true);
+</script>
+
+</body>
+</html>

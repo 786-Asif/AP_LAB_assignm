@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript first page </title>
+</head>
+<style>
+    body{
+        background-color: rgb(22, 73, 73);
+    }
+    h1{
+        color: red;
+        background-color: yellow;
+        padding: 9px;
+        padding-left: 20px;
+        text-align: center;
+        font-style: oblique;
+    }
+    #suzzu{
+        color:orangered;
+        background-color: rgb(60, 255, 0);
+        font-style: oblique;
+    }
+    #myh1{
+        color: rgb(177, 16, 43);
+        background-color: aqua;
+        font-style: oblique;
+    }
+    #myh{
+        color:rgb(3, 119, 9);
+        background-color: rgb(247, 141, 215);
+        font-style: oblique;
+    }
+    button{
+        background-color: rgb(243, 133, 121);
+        color: black;
+        font-style: oblique;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: rgb(7, 231, 7);
+        font-style: oblique;
+    }
+    #demo{
+        background-color: rgb(241, 183, 95);
+        color: red;
+        font-style: oblique;
+    }
+#demo1{
+    background-color:skyblue;
+    color: saddlebrown;
+    font-style: oblique;
+}
+#demo2{
+
+    color:rgb(170, 5, 27);
+        background-color:rgb(47, 255, 47);
+        font-style: oblique;
+    }
+    #demo3{
+
+color:rgb(221, 235, 31);
+    background-color:rgb(78, 47, 255);
+    font-style: oblique;
+    text-align: left 20px;
+}
+    h1:hover{
+        background-color: rgb(67, 224, 230);
+        color: rgb(86, 46, 139);
+    }
+    #demo4{
+        color:rgb(247, 37, 37);
+        background-color: white;
+    }
+    #demo5{
+        color: rgb(248, 70, 47);
+
+    }
+    #demo6{
+        color: darkorange;
+        background-color: blueviolet;
+    }
+    #demo7{
+        color:rgb(221, 235, 31);
+    background-color:rgb(240, 74, 184);
+    font-style: oblique;
+   
+        
+    }
+</style>
+<body>
+    <h1>Javascript<div class="as">Asif 🤩🤩</div></span></h1>
+    <h2 id="myh"></h2>
+    <h2 id="myh1"></h2>
+    <h2 id="suzzu"></h2>
+    <h2 id="demo"></h2>
+    <h2 id="demo1"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+    <h2 id="demo4"></h2>
+    <h2 id="demo5"></h2>
+    <h2 id="demo6"></h2>
+   <h2 id="demo7">visit to iiit Pune</h2>
+   <h2 id="demo8"></h2>
+    <button type="button" onclick="document.getElementById('suzzu').innerHTML='Dear su-su jal 😂🤣😃'">click me</button>
+    <button type="button" onclick="document.getElementById('demo5').innerHTML=Date()">See Time</button>
+    <button onclick="myFunction()">click me</button>
+    <script>
+        let name="mohammad Asif"
+    console.log(name)
+
+    document.getElementById("myh").innerHTML="Hello dear Rachit";
+    document.getElementById("myh1").innerHTML="Hi Anshumat";
+    
+    let x="Nissi";
+    let y="babby";
+    let z= x+" "+y;
+document.getElementById("demo").innerHTML="value of z is :"+z;
+
+let first="Priyanshu";
+let last="chhabda";
+let full= first +" "+last;
+document.getElementById("demo1").innerHTML=full;
+
+const cars=["Audi","TATA","BMW",];
+cars[0]="Suzuki";
+cars.push("Audi");
+document.getElementById("demo2").innerHTML=cars;
+
+let m= 5;
+let n= 5;
+let p = 6;
+
+document.getElementById("demo3").innerHTML =
+(m == n) + " "+"&" + " "+(m == p);
+
+function myfunction(p,q){
+    return (p*q);
+}
+document.getElementById("demo4").innerHTML=myfunction(4,5);
+
+let strng="mohammad Asif"
+document.getElementById('demo6').innerHTML=strng.length;
+
+function myFunction() {
+  let text = document.getElementById("demo7").innerHTML;
+  document.getElementById("demo7").innerHTML =
+  text.replace("Pune","Nagpur");
+}
+let q="Rachit";
+let r="Asif";
+let s=q+ " & "+r;
+document.getElementById("demo8").innerHTML=s;
+</script>
+</body>
+</html>

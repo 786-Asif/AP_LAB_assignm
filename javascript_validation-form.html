@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript validation form</title>
+</head>
+<body>
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        let y = document.forms["myForm"]["fadd"].value;
+        if(y==""){
+            alert("fill the addres");
+         return false;
+        }
+        let z = document.forms["myForm"]["fno"].value;
+        if(z==""){
+            alert("roll no must be filled");
+            return false;
+        }
+    }
+        </script>
+
+<h2>JavaScript Validation</h2>
+<b>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Your Name: <input type="text" name="fname" id="name">
+  <br><br>
+  Your Addr.: <input type="text" name="fadd" id="add">
+  <br><br>
+  Roll no:<input type="number" name="fno" id="no">
+  <br><br>
+  <input type="submit" value="Submit" id="sub">
+</form>
+</b>
+<style>
+    *{
+        margin: 3px;
+        padding: 3px;
+    }
+    .text{ 
+        margin: 5px;
+        padding: 2px;
+    }
+    body{
+        background-color: rgb(247, 97, 122);
+    }
+    .number{
+        margin: 30px;
+        padding: 10px;
+    }
+    .submit{
+        background-color: yellow;
+    }
+    #name{
+        margin-left: 30px;
+    }
+    #add{
+        margin-left: 28px;
+    }
+    #no{
+        margin-left: 55px;
+    }
+    #sub{
+        margin-left: 50px;
+        width: 150px;
+    }
+</style>
+
+</body>
+</html>

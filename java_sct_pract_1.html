@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        .container{
+            border: 2px solid rgb(245, 103, 103);
+            margin: 3px 0;
+            background: rgb(17, 160, 160);
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: rgb(133, 13, 245);
+        }
+        .text-success{
+            color: rgb(250, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the JavaScript</h1>
+    <div id="firstContainer" class="container">
+        <button id="click" onclick="clicked()">Click Me</button> 
+        <h2 style="background-color: blue;" > this slide is made by ASIF 😎😎😎</h2>
+    </div>
+    <div class="container">
+        <h3 style="background-color: rgb(216, 52, 52);">don't see like this 🤣🤣</h3>
+    </div>
+
+<script>
+     console.log("Hello World");
+//console.warn("this is warning");
+ //console.error("This is an error");
+//var number1 = 34;
+//var number2 = 56;
+// console .log(number1 + number2);
+ var str1 = "RAMZAN MUBARAK";
+ console .log(str1);
+ var marks={
+    asif:99.99,
+     junaid:99.98,
+     alkahalf:99.89,
+     shashwat:99.97
+ }
+ console .log(marks);
+ //boolean
+ var a="true";
+ var b="false";
+ console.log(a);
+ //array
+ var arr=[2,3,4,5,6,]
+ console.log(arr);
+ //comparison.
+ var a = 45;
+ var b = 35;
+ console.log(a==b);
+ console.log(a<b);
+ console.log(a>b);
+// function in javascript.
+ function avg (m,n){
+     c=(m+n)/2;
+     return c;
+ }
+ c1=avg(4,8);
+ console.log(c1,);
+ c2=avg(6,8);
+ console.log(c2);
+ // if-else statements.
+ var age = 35;
+ if(age>34){
+     console.log('you can go to london');
+ }
+ else{
+     console.log('you will in your house');
+ }
+// if-else-if ladder.
+var age = 40;
+if(age>30){
+    console.log('you are not young');
+}
+else if(age<10){
+    console.log('you are a kd now ');
+}
+else{
+    console.log('end the ladder');
+}
+//array using for loop.
+//var arr=[10,12,14,16,18,20];
+//for(var i=0; i< arr.length;i++){
+//console.log(arr[i]);
+//}
+/* changing array.*/
+let myarr = ["junaid","alkahalf","shashwat","faiz"];
+// Array Methods
+ //console.log(myarr.length);
+// myarr.pop();
+ myarr.push("asif");
+console.log(myarr);
+
+let mystring="Asif is a good boy";
+//console.log(mystring.length);
+d=mystring.replace("Asif","junaid");
+console.log(mystring);
+console.log(d);
+
+//time and date in javascript.
+let myDate = new Date();
+//console.log(myDate);
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getHours());
+console.log(myDate.getMinutes());
+
+</script>
+    </body>
+    
+</html>
